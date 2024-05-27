@@ -12,13 +12,13 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 app.register_blueprint(app_views, url_prefix='/api/v1')
 
 @app.teardown_appcontext
-def teardown_appcontext(exception):
+def teardown(exception):
     """comments """
     storage.close()
 
 if __name__ == "__main__":
 
     host = getenv('HBNB_API_HOST', default='0.0.0.0')
-    port = getenv('HBNB_API_PORT', default=5000)
+    port = int(getenv('HBNB_API_PORT', default=5000))
 
-    app.run(host, int(port), threaded=True)
+    app.run(host, port, threaded=True)

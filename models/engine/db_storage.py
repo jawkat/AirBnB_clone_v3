@@ -16,8 +16,14 @@ import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
-classes = {"Amenity": Amenity, "City": City,
-           "Place": Place, "Review": Review, "State": State, "User": User}
+classes = {
+            "Amenity": Amenity,
+            "City": City,
+            "Place": Place,
+            "Review": Review,
+            "State": State,
+            "User": User
+        }
 
 
 class DBStorage:
@@ -82,8 +88,11 @@ class DBStorage:
             return self.__session.query(cls).get(id)
         return None
 
+
     def count(self, cls=None):
         """Compte le nombre d'objets en stockage"""
         if cls:
+            if isinstance(cls, str):
+                cls = eval(cls)  # Convert class name string to class object
             return self.__session.query(cls).count()
-        return sum(self.__session.query(model).count() for model in classes.values())
+        return sum(self.__session.query(cls).count() for cls in [State, City, User, Place, Review, Amenity])

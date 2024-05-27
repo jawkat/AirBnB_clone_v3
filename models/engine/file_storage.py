@@ -77,6 +77,8 @@ class FileStorage:
 
     def count(self, cls=None):
         """Compte le nombre d'objets en stockage"""
-        if cls is None:
-            return len(self.__objects)
-        return len([obj for obj in self.__objects.values() if isinstance(obj, cls)])
+        if cls:
+            if isinstance(cls, str):
+                cls = eval(cls)  # Convert class name string to class object
+            return len([obj for obj in self.__objects.values() if isinstance(obj, cls)])
+        return len(self.__objects)
