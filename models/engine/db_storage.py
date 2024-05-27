@@ -81,13 +81,11 @@ class DBStorage:
         """call remove() method on the private session attribute"""
         self.__session.remove()
 
-
     def get(self, cls, id):
         """Récupère un objet basé sur la classe et son ID"""
         if cls and id:
             return self.__session.query(cls).get(id)
         return None
-
 
     def count(self, cls=None):
         """Compte le nombre d'objets en stockage"""
@@ -95,4 +93,5 @@ class DBStorage:
             if isinstance(cls, str):
                 cls = eval(cls)  # Convert class name string to class object
             return self.__session.query(cls).count()
-        return sum(self.__session.query(cls).count() for cls in [State, City, User, Place, Review, Amenity])
+        return sum(self.__session.query(cls).count()
+                   for cls in [State, City, User, Place, Review, Amenity])

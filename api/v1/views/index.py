@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ comments """
 from textwrap import indent
 from flask import jsonify

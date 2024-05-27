@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ comments """
 from os import getenv
 from flask import Flask

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ comments """
 # Wildcard import
 from api.v1.views.index import *
