@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" comments """
+"""
+     _summary_
+"""
 from os import getenv
 from flask import Flask
 from api.v1.views import app_views
