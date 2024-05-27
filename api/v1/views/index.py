@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ comments """
-from textwrap import indent
 from flask import jsonify
 from models.amenity import Amenity
 from models.city import City
@@ -10,7 +9,6 @@ from models.state import State
 from models.user import User
 from models import storage
 from api.v1.views import app_views
-import json
 
 
 @app_views.route('/status')
@@ -20,7 +18,7 @@ def status():
 
 
 @app_views.route('/stats')
-def number_objects():
+def stats():
     """ Retrieves the number of each objects by type """
     # lasses = [amenities, City, Place, Review, State, User]
     # names = ["", "cities", "places", "reviews", "states", "users"]
