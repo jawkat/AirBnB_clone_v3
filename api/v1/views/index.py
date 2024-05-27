@@ -10,11 +10,11 @@ from models.state import State
 from models.user import User
 from models import storage
 from api.v1.views import app_views
-
+import json
 @app_views.route('/status', methods=['GET'], strict_slashes=False)
 def status():
     """ comments """
-    return jsonify({"status": "OK"})
+    return json.dumps({"status": "OK"}, indent=4) + "\n"
 
 @app_views.route('/stats', methods=['GET'], strict_slashes=False)
 def number_objects():
