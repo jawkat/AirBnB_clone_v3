@@ -22,7 +22,6 @@ def teardown(exception):
     """
     storage.close()
 
-<<<<<<< HEAD
 
 @app.errorhandler(404)
 def page_not_fount(err):
@@ -30,8 +29,6 @@ def page_not_fount(err):
     return jsonify({"error": "Not found"}), 404
 
 
-=======
->>>>>>> refs/remotes/origin/master
 if __name__ == "__main__":
     """
     Main entry point for the application.
