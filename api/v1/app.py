@@ -1,5 +1,6 @@
 #!/usr/bin/python
-from os import environ
+""" comments """
+from os import getenv
 from flask import Flask
 from api.v1.views import app_views
 from models import storage
@@ -17,10 +18,7 @@ def teardown_appcontext(exception):
 
 if __name__ == "__main__":
 
-    host = environ.get('HBNB_API_HOST')
-    port = environ.get('HBNB_API_PORT')
-    if not host:
-        host = '0.0.0.0'
-    if not port:
-        port = '5000'
-    app.run(host=host, port=port, threaded=True)
+    host = getenv('HBNB_API_HOST', default='0.0.0.0')
+    port = getenv('HBNB_API_PORT', default=5000)
+
+    app.run(host, int(port), threaded=True)
