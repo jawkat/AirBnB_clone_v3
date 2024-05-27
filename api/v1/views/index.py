@@ -13,20 +13,23 @@ from api.v1.views import app_views
 import json
 
 
-@app_views.route('/status', methods=['GET'], strict_slashes=False)
+@app_views.route('/status')
 def status():
     """ comments """
-    return jsonify({"status": "OK"})
+    return jsonify({"status": "OK"}), 200
 
 
-@app_views.route('/stats', methods=['GET'], strict_slashes=False)
+@app_views.route('/stats')
 def number_objects():
     """ Retrieves the number of each objects by type """
-    classes = [Amenity, City, Place, Review, State, User]
-    names = ["amenities", "cities", "places", "reviews", "states", "users"]
+    # lasses = [amenities, City, Place, Review, State, User]
+    # names = ["", "cities", "places", "reviews", "states", "users"]
+    # test dictionary
+    classes = {"amenities": Amenity,
+               "cities": City, "places": Place, "reviews": Review,
+               "states": State, "users": User}
 
     num_objs = {}
-    for i in range(len(classes)):
-        num_objs[names[i]] = storage.count(classes[i])
-
+    for key, value in classes.items():
+        num_objs[key] = storage.count(value)
     return jsonify(num_objs)
