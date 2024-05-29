@@ -1,18 +1,11 @@
 #!/usr/bin/python3
-"""Module app.py documentation.
-this app.py file is about to :
-1. Strict Slashes Configuration
-2. Teardown Function
-3. Custom 404 Error Handler
-4. Configurable Host and Port
-"""
+"""Module app.py Documentation"""
 from flask import Flask, jsonify
-from os import getenv
-from api.v1.views import app_views
 from models import storage
+from api.v1.views import app_views
+from os import getenv
 
 app = Flask(__name__)
-
 app.register_blueprint(app_views)
 app.url_map.strict_slashes = False
 
@@ -24,7 +17,7 @@ def teardown(exception):
 
 
 @app.errorhandler(404)
-def page_not_fount(err):
+def page_not_found(err):
     """Handle 404 errors and return a JSON response with a 404 status code."""
     return jsonify({"error": "Not found"}), 404
 
