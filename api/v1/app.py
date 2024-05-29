@@ -1,41 +1,36 @@
 #!/usr/bin/python3
+"""Module app.py documentation.
+this app.py file is about to :
+1. Strict Slashes Configuration
+2. Teardown Function
+3. Custom 404 Error Handler
+4. Configurable Host and Port
 """
-Application setup and entry point.
-"""
-from os import getenv
 from flask import Flask, jsonify
+from os import getenv
 from api.v1.views import app_views
 from models import storage
 
-# Initialize the Flask application
 app = Flask(__name__)
 
-# Register the blueprint with the Flask app
 app.register_blueprint(app_views)
 app.url_map.strict_slashes = False
 
 
 @app.teardown_appcontext
 def teardown(exception):
-    """
-    Teardown function to close the storage session
-    """
+    """Teardown function to close the storage session."""
     storage.close()
 
 
 @app.errorhandler(404)
 def page_not_fount(err):
-    """ page not fount and header must return 404 """
+    """Handle 404 errors and return a JSON response with a 404 status code."""
     return jsonify({"error": "Not found"}), 404
 
 
 if __name__ == "__main__":
-    """
-    Main entry point for the application.
-    Retrieves host and port from environment variables and runs the Flask app.
-    """
     host = getenv('HBNB_API_HOST', default='0.0.0.0')
     port = getenv('HBNB_API_PORT', default=5000)
 
-    # Run the Flask app
     app.run(host=host, port=int(port), threaded=True)
