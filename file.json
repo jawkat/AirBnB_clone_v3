@@ -1,1 +1,144 @@
-{"State.c5829411-49f5-4c07-a1c6-5cc0e303faa0": {"id": "c5829411-49f5-4c07-a1c6-5cc0e303faa0", "created_at": "2024-05-27T09:43:27.846031", "updated_at": "2024-05-27T09:43:27.846095", "__class__": "State"}, "State.59bbf905-bdbf-4248-a65b-6c487ec3a6c3": {"id": "59bbf905-bdbf-4248-a65b-6c487ec3a6c3", "created_at": "2024-05-27T09:44:34.365761", "updated_at": "2024-05-27T09:44:34.366644", "__class__": "State"}, "State.7ea36690-c3f7-463d-8d28-5ea9df3c243e": {"name": "California", "created_at": "2024-05-27T09:58:23.827266", "updated_at": "2024-05-27T09:58:23.827350", "id": "7ea36690-c3f7-463d-8d28-5ea9df3c243e", "__class__": "State"}, "State.fea1cab9-fbdf-416a-a80f-3cb4503b3e52": {"name": "Arizona", "created_at": "2024-05-27T09:58:23.828225", "updated_at": "2024-05-27T09:58:23.828305", "id": "fea1cab9-fbdf-416a-a80f-3cb4503b3e52", "__class__": "State"}, "Place.bf286c24-6b43-4b57-a701-8feed2369d82": {"city_id": "0001", "user_id": "0001", "name": "My little house", "number_rooms": 4, "number_bathrooms": 2, "max_guest": 10, "price_by_night": 300, "latitude": 37.773972, "longitude": -122.431297, "created_at": "2024-05-27T09:58:23.829376", "updated_at": "2024-05-27T09:58:23.829452", "id": "bf286c24-6b43-4b57-a701-8feed2369d82", "__class__": "Place"}, "State.c55027e8-d866-464e-97a1-7175e8289830": {"id": "c55027e8-d866-464e-97a1-7175e8289830", "created_at": "2024-05-27T11:20:58.095194", "updated_at": "2024-05-27T11:20:58.095194", "name": "California", "__class__": "State"}, "State.7ba0b158-1f78-4675-8010-ad9e10c24a25": {"id": "7ba0b158-1f78-4675-8010-ad9e10c24a25", "created_at": "2024-05-27T11:20:58.097542", "updated_at": "2024-05-27T11:20:58.097542", "name": "Nevada", "__class__": "State"}}
+{
+  "State.c5829411-49f5-4c07-a1c6-5cc0e303faa0": {
+    "id": "c5829411-49f5-4c07-a1c6-5cc0e303faa0",
+    "created_at": "2024-05-27T09:43:27.846031",
+    "updated_at": "2024-05-27T09:43:27.846095",
+    "__class__": "State"
+  },
+  "State.59bbf905-bdbf-4248-a65b-6c487ec3a6c3": {
+    "id": "59bbf905-bdbf-4248-a65b-6c487ec3a6c3",
+    "created_at": "2024-05-27T09:44:34.365761",
+    "updated_at": "2024-05-27T09:44:34.366644",
+    "__class__": "State"
+  },
+  "State.7ea36690-c3f7-463d-8d28-5ea9df3c243e": {
+    "name": "California",
+    "created_at": "2024-05-27T09:58:23.827266",
+    "updated_at": "2024-05-27T09:58:23.827350",
+    "id": "7ea36690-c3f7-463d-8d28-5ea9df3c243e",
+    "__class__": "State"
+  },
+  "State.fea1cab9-fbdf-416a-a80f-3cb4503b3e52": {
+    "name": "Arizona",
+    "created_at": "2024-05-27T09:58:23.828225",
+    "updated_at": "2024-05-27T09:58:23.828305",
+    "id": "fea1cab9-fbdf-416a-a80f-3cb4503b3e52",
+    "__class__": "State"
+  },
+  "Place.bf286c24-6b43-4b57-a701-8feed2369d82": {
+    "city_id": "0001",
+    "user_id": "0001",
+    "name": "My little house",
+    "number_rooms": 4,
+    "number_bathrooms": 2,
+    "max_guest": 10,
+    "price_by_night": 300,
+    "latitude": 37.773972,
+    "longitude": -122.431297,
+    "created_at": "2024-05-27T09:58:23.829376",
+    "updated_at": "2024-05-27T09:58:23.829452",
+    "id": "bf286c24-6b43-4b57-a701-8feed2369d82",
+    "__class__": "Place"
+  },
+  "State.c55027e8-d866-464e-97a1-7175e8289830": {
+    "id": "c55027e8-d866-464e-97a1-7175e8289830",
+    "created_at": "2024-05-27T11:20:58.095194",
+    "updated_at": "2024-05-27T11:20:58.095194",
+    "name": "California",
+    "__class__": "State"
+  },
+  "State.7ba0b158-1f78-4675-8010-ad9e10c24a25": {
+    "id": "7ba0b158-1f78-4675-8010-ad9e10c24a25",
+    "created_at": "2024-05-27T11:20:58.097542",
+    "updated_at": "2024-05-27T11:20:58.097542",
+    "name": "Nevada",
+    "__class__": "State"
+  },
+  "User.f6cf2f61-6e52-4877-abab-4cffd757491e": {
+    "id": "f6cf2f61-6e52-4877-abab-4cffd757491e",
+    "created_at": "2024-06-01T10:29:34.234039",
+    "updated_at": "2024-06-01T10:29:34.234103",
+    "__class__": "User"
+  },
+  "User.dc7eaf8d-58a8-4239-8640-4b4419f27358": {
+    "id": "dc7eaf8d-58a8-4239-8640-4b4419f27358",
+    "created_at": "2024-06-01T10:33:01.886999",
+    "updated_at": "2024-06-01T10:33:01.887099",
+    "__class__": "User"
+  },
+  "User.ea7a6544-4006-49a3-b777-455fed9c69cc": {
+    "id": "ea7a6544-4006-49a3-b777-455fed9c69cc",
+    "created_at": "2024-06-01T10:33:27.160810",
+    "updated_at": "2024-06-01T10:33:27.160867",
+    "__class__": "User"
+  },
+  "User.7aca5419-a729-4baf-9f67-57363089fa88": {
+    "id": "7aca5419-a729-4baf-9f67-57363089fa88",
+    "created_at": "2024-06-01T10:33:34.632774",
+    "updated_at": "2024-06-01T10:33:34.632826",
+    "__class__": "User"
+  },
+  "User.028bf641-30b2-443e-aadc-b477bde00b27": {
+    "id": "028bf641-30b2-443e-aadc-b477bde00b27",
+    "created_at": "2024-06-01T10:35:27.064321",
+    "updated_at": "2024-06-01T10:35:27.064375",
+    "__class__": "User"
+  },
+  "User.f6c5e83a-0f38-433a-b34e-bb25002ba5e6": {
+    "id": "f6c5e83a-0f38-433a-b34e-bb25002ba5e6",
+    "created_at": "2024-06-01T10:38:04.178040",
+    "updated_at": "2024-06-01T10:38:04.178119",
+    "__class__": "User"
+  },
+  "State.1522a71b-f952-46ba-9108-feee48d73588": {
+    "id": "1522a71b-f952-46ba-9108-feee48d73588",
+    "created_at": "2024-06-01T10:39:51.502529",
+    "updated_at": "2024-06-01T10:39:51.502600",
+    "__class__": "State"
+  },
+  "User.edc94fac-cce8-48f9-a7eb-e4616335c864": {
+    "id": "edc94fac-cce8-48f9-a7eb-e4616335c864",
+    "created_at": "2024-06-01T10:46:07.345650",
+    "updated_at": "2024-06-01T10:46:07.345738",
+    "__class__": "User"
+  },
+  "User.b3866711-ae48-4925-9c50-9fd783ed2c9f": {
+    "id": "b3866711-ae48-4925-9c50-9fd783ed2c9f",
+    "created_at": "2024-06-01T10:46:37.400142",
+    "updated_at": "2024-06-01T10:46:37.400204",
+    "__class__": "User"
+  },
+  "User.a900e936-d336-474f-a4fe-ae5ccd208805": {
+    "id": "a900e936-d336-474f-a4fe-ae5ccd208805",
+    "created_at": "2024-06-01T10:46:51.425398",
+    "updated_at": "2024-06-01T10:46:51.425469",
+    "__class__": "User"
+  },
+  "User.19bd0f33-d426-450c-8c8a-974ad131c1ad": {
+    "id": "19bd0f33-d426-450c-8c8a-974ad131c1ad",
+    "created_at": "2024-06-01T10:47:17.480879",
+    "updated_at": "2024-06-01T10:47:17.480974",
+    "__class__": "User"
+  },
+  "State.f1c3a6d4-3bfc-405a-8389-02aabde3a41b": {
+    "name": "California",
+    "created_at": "2024-06-01T11:00:22.385349",
+    "updated_at": "2024-06-01T11:00:22.385479",
+    "id": "f1c3a6d4-3bfc-405a-8389-02aabde3a41b",
+    "__class__": "State"
+  },
+  "State.697129cc-ed44-4aaa-b6ed-7acceaf7a597": {
+    "name": "California",
+    "created_at": "2024-06-01T11:44:32.827286",
+    "updated_at": "2024-06-01T11:44:32.827375",
+    "id": "697129cc-ed44-4aaa-b6ed-7acceaf7a597",
+    "__class__": "State"
+  },
+  "State.929f8b83-f57b-4d98-9f06-c43f1dbedc34": {
+    "name": "California",
+    "created_at": "2024-06-01T11:44:45.294860",
+    "updated_at": "2024-06-01T11:44:45.294949",
+    "id": "929f8b83-f57b-4d98-9f06-c43f1dbedc34",
+    "__class__": "State"
+  }
+}
