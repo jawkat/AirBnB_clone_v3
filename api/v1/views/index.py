@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" comments """
+'''File Doc.'''
 from flask import jsonify
 from models.amenity import Amenity
 from models.city import City
@@ -13,13 +13,13 @@ from api.v1.views import app_views
 
 @app_views.route('/status')
 def status():
-    """ comments """
+    '''status doc method.'''
     return jsonify({"status": "OK"}), 200
 
 
 @app_views.route('/stats')
 def stats():
-    """ Retrieves the number of each objects by type """
+    '''retrieves the number of each objects by type.'''
     # lasses = [amenities, City, Place, Review, State, User]
     # names = ["", "cities", "places", "reviews", "states", "users"]
     # test dictionary
