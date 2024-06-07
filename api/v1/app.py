@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Module app.py Documentation"""
 from flask import Flask, jsonify
-from api.v1.views import app_views
 from os import getenv
 
 app = Flask(__name__)
