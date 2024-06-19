@@ -1,15 +1,19 @@
 #!/usr/bin/python3
 """Module app.py Documentation"""
-from flask import Flask, jsonify
-from os import getenv
+from models import storage
 from api.v1.views import app_views
+from os import getenv
+from flask import Flask, jsonify
+
+
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 app.register_blueprint(app_views)
 app.url_map.strict_slashes = False
 
 
 @app.teardown_appcontext
-def teardown(exception):
+def close(exception):
     """Teardown function to close the storage session."""
     storage.close()
 

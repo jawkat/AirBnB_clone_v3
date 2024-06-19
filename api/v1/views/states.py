@@ -8,14 +8,14 @@ from models import storage
 app = Flask(__name__)
 
 
-@app.route('/states', methods=['GET'])
+@app.route('/api/v1/states', methods=['GET'])
 def get_states():
     """Get method to retrieve all State objects"""
     states = storage.all(State).values()
     return jsonify([state.to_dict() for state in states])
 
 
-@app.route('/states', methods=['GET'])
+@app.route('/states/<state_id>', methods=['GET'])
 def get_state(state_id):
     """Get method check if state_id is linked to
     Rest Actions"""
